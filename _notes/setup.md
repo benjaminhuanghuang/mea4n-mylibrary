@@ -1,4 +1,4 @@
-# Prerequisites
+# Setup for angular
     $ npm install --save-dev @angular/cli
 
 # Create Node.js project
