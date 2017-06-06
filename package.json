@@ -1,0 +1,19 @@
+{
+  "name": "MyLibrary-MEA4N",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminhuanghuang/mea4n-mylibrary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjaminhuanghuang/mea4n-mylibrary/issues"
+  },
+  "homepage": "https://github.com/benjaminhuanghuang/mea4n-mylibrary#readme"
+}
