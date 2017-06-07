@@ -6,23 +6,19 @@ var schema = new Schema({
         type: String,
         required: true,
     },
-    name: {
+    author: {
         type: String,
         required: true,
     },
-    name: {
+    release_date: {
         type: String,
         required: true,
     },
-    name: {
-        type: String,
-        required: true,
+    rate: {
+        type: int,
     },
-    name: {
+    downloaded: {
         type: String,
-        required: true,
     },
-
-
 });
 module.exports = mongoose.model('Message', schema);

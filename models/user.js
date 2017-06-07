@@ -1,14 +1,25 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+var mongooseUniqueValidator = required('mongoose-unique-validator');
 
 var schema = new Schema({
-    content: {
+    account: {
         type: String,
         required: true,
     },
-    user: {
-        type: mongoose.Types.ObjectId,
+    password: {
+        type: String,
         ref: 'User'
-    }
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    messages: [{
+        type: Schema.Types.ObjectId, ref: 'Message'
+    }]
 });
-module.exports = mongoose.model('Message', schema);
+
+schema.plugin(mongooseUniqueValidator);
+module.exports = mongoose.model('User', schema);
